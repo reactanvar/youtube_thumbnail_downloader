@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:ital@1&family=Poppins&family=Sometype+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 400px !important;
+    margin: 0 auto;
+    padding: 10px;
+    background: #fff;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 0 5px #dcdcdc;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.container p {
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: rgb(104, 100, 100);
+}
+
+.container input{
+    outline: none;
+    border: 1px solid transparent;
+    width: 100%;
+
+}
+
+.container button {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.container .input-group {
+    padding: 9px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px #dcdcdc solid;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    transition: 0.4s;
+
+}
+
+.container .input-group:hover{
+    border-color: rgb(19, 174, 34);
+}
+
+.container select {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px #dcdcdc solid;
+    outline: none;
+}
+
+.container label {
+    font-size: 12px;
+    color: rgb(104, 100, 100);
+}
+
+
+
+.output {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.output img {
+    width: 380px;
+    border-radius: 5px;
+}
+
+
+
+.output .loader {
+    height: 30px;
+    transition: 0.4s;
+    box-shadow: 0 0 5px #c7c7c7;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid rgb(212, 45, 101);
+    border-left: 2px solid #fff;
+    animation: loader 1s linear infinite;
+}
+
+@keyframes loader {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+
+    }
+}
